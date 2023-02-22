@@ -1,0 +1,377 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #222831;
+    color: #EEEEEE;
+    font-family: sans-serif;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    line-height: 2;
+}
+
+
+
+/* -------- Refactoring -------- */
+
+h1, h2{
+    color: #00ADB5;
+}
+
+#title-section, #skills-section, #education-section{
+    background-color: #1e2222;
+}
+
+#profile-section, #project-section, #contact-section{
+    background-color: #272c2c;
+} 
+
+.center-padding{
+    height: 100vh;
+    padding-bottom: 8%;
+    padding-top: 8%;
+
+}
+
+.center-inners{
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+
+
+/* ------- Selectors -------- */
+
+/* .scroll-container{
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+}
+
+.scroll-section{
+    scroll-snap-align: end;
+} */
+
+a{
+    color: #393E46;
+    margin: auto 20px 0 20px;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #616977;
+}
+
+
+h1{
+    margin: 0;
+    font-size: 5.625rem;
+}
+
+h2{
+    margin: 30px auto;
+    font-size: 2.5rem;
+}
+
+h3{
+    color: #6D9886;
+}
+
+p{
+    margin: auto auto 30px auto;
+}
+
+
+
+/*-------- navbar --------*/
+.nav{
+    z-index: 10;
+}
+
+
+
+
+/*-------- Title --------*/
+
+#title-section{
+    text-align: center;
+    background-image: url(../images/leaves.jpg);
+    background-size: cover;
+}
+.title{
+    position: relative;
+}
+.name{
+    position: relative;
+}
+
+.name h1{
+    position:absolute;
+    color: #ffffff;
+    top: 150px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-text-stroke: 2px #03a9f4;
+}
+
+.my-title{
+    position: relative;
+    top: 200px
+}
+
+.name h1:nth-child(1){
+    color: transparent
+}
+
+.name h1:nth-child(2){
+    color: #03a9f4;
+    animation: animate 4s ease-in-out infinite;
+}
+
+@keyframes animate
+{
+    0%,100%{
+        clip-path: polygon(0 54%, 8% 48%, 19% 43%, 31% 43%, 42% 45%, 49% 49%, 53% 55%, 63% 61%, 73% 61%, 82% 60%, 89% 54%, 96% 47%, 100% 47%, 100% 100%, 0 100%);
+    }
+
+    50%{
+        clip-path: polygon(0 41%, 8% 48%, 15% 56%, 27% 58%, 41% 53%, 46% 44%, 56% 38%, 65% 38%, 74% 37%, 84% 40%, 90% 45%, 96% 47%, 99% 42%, 100% 100%, 0 100%);
+    }
+}
+.my-title{
+    margin-top: 0; 
+}
+
+
+
+/*-------- Profile --------*/
+
+#profile-section{
+    background-image: url(../images/matt-antonioli---b01C5Tqtc-unsplash.jpg);
+    background-size: cover;
+}
+
+
+/*-------- Skills ---------*/
+
+
+#skills-section{
+    background-image: url(../images/james-lee-mTy4FLauOV4-unsplash.jpg);
+    background-size: cover;
+    background-position: top;
+    padding: 30px;
+}
+
+.skills{
+    line-height: 2;
+    position: relative;
+    margin-left: 50px;
+
+}
+
+.backend-details{
+    width: 80%;
+    height: 40%;
+}
+
+.skill-row{
+    text-align: left;
+    line-height: 2;
+    margin: 40px auto 40px auto;
+}
+
+.skill-image{
+    height: 100px;
+    width: 100px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.java-image{
+    float: left;
+    margin-right: 30px;
+    padding-bottom: 10px;
+}
+
+.c-image{
+    margin-left: 0;
+    float: right;
+}
+
+.web-image{
+    margin-right: 30px;
+    float: left;
+}
+
+@media (max-width: 1050px){
+    #skills-section{
+        width: auto;
+        height: auto;
+    }
+    .java-image{
+  
+        margin-right: 30px;
+        padding-bottom: 10px;
+    }
+    
+    .c-image{
+
+        margin-left: 0;
+        float: none;
+    }
+    
+    .web-image{
+
+        margin-right: 30px;
+        float: none;
+    }
+}
+
+/* -------- Projects -------- */
+#project-section{
+    background-image: url(../images/raghav-verma-VISZBcAB6U8-unsplash.jpg);
+    background-position: bottom;
+    background-size: cover;
+    padding: 30px;
+}
+
+.project-image{
+    width: 600px;
+    height: 300px;
+}
+
+/* --------education-------- */
+#education-section{
+    background-image: url(../images/pikrepo.jpg);
+    background-position: top;
+    background-size: cover;
+    padding: 30px;
+}
+#education-section{
+    padding: 30px;
+}
+
+#education-section{
+    position: relative;
+}
+
+
+.row{
+    text-align: left;
+
+}
+
+@media (max-width: 1028px){
+    #education-section{
+        width: auto;
+        height: auto;
+    }
+
+}
+
+
+
+/*--------- Contact --------*/
+#contact-section{
+    background-image: url(../images/ryoji-hayasaka-Pi2YfVX-TMY-unsplash.jpg);
+    background-size: cover;
+    background-position: top;
+}
+
+.contact{
+    line-height: 2;
+}
+
+.btn {
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 15px;
+    background: #00ADB5;
+    padding: 10px 21px 10px 20px;
+    text-decoration: none;
+  }
+
+  .btn:hover {
+    background: #00979c;
+    text-decoration: none;
+  }
+
+
+
+/*-------- footer --------*/
+#footer-section{
+    background-color: rgb(20, 19, 19);
+}
+
+.bottom-container{
+    padding: 30px 0 20px 0;
+}
+
+.copyright-text{
+    margin: 20px 0 0 0;
+    color: #393E46;
+    font-size: 0.75rem;;
+}
+
+
+
+/* ---- Background Images ----- */
+
+
+
+
+.background-bottom{
+    width: 15%;
+    position: fixed;
+    margin: 0;
+    left: 0; 
+    bottom: 0; 
+}
+
+.background-top{
+    width:15%;
+    position: fixed;
+    right: 0;
+    top: 0;
+    transform: rotate(180deg);
+}
+
+@media (max-width: 1000px){
+    .background-bottom{
+        visibility: hidden;
+    }
+    
+    .background-top{
+        visibility: hidden;
+    }
+}
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+

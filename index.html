@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Yachyaa Toefy</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+
+<body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  
+
+<div class = "scroll-container">
+
+  <section id = "navbar" class = "scroll-section">
+    <nav class="navbar navbar-fixed-bottom navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Yachyaa Toefy</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#title-section">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#profile-section">Profile</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#skills-section">Skills</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#project-section">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#education-section">Education</a>
+              </li>
+         
+            </ul>
+          </div>
+        </div>
+      </nav>
+  </section>
+  <section id = "title-section"  class = "center-padding scroll-section">
+    <div class = "title" >
+      <div class = "name" data-aos = "flip-up" data-aos-duration="1500">
+        <h1>Yachyaa Toefy</h1>
+        <h1>Yachyaa Toefy</h1>
+      </div>
+        <p class = "my-title" data-aos = "fade-up" data-aos-duration="3000">Software Engineer || Web Developer</p>
+    </div>
+  </section>
+  
+  
+  
+  
+  <div>
+    
+  </div>
+  <section id = "profile-section" class = "center-padding scroll-section">
+    <div class = "profile center-inners">
+      <div class="profile-description" >
+        <h2>Hello.</h2>
+        <p data-aos = "fade-left">My name is Yachyaa. I'm currently a Computer Science and Information Systems
+          student at the University of Cape Town. From a young age I was always facinated by 
+          technology and that initial interst made choosing a career path very easy. As soon 
+          as I wrote my first HelloWorld program, I knew i made the right career choice. 
+        </p>
+      </div>
+    </div>
+  </section>
+  
+  
+  
+  
+  
+  
+  
+  <section id = "skills-section" class = "center-padding scroll-section">
+    <div class ="skill center-inners">
+      <div class="skills">
+        <h2>My Skills.</h2>
+        <div class="skill-row">
+          <img class = "skill-image java-image" src="images/java.png" alt="java image" data-aos="flip-up">
+          <h3 >Back-End Development</h3>
+          <p class = backend-details data-aos = "fade-left"> Due to my Computer Science and Information Systems background, I have experience 
+              in Java, Python, Kotlin, SQL and MIPS assembly.
+          </p>
+        </div>
+        <div class="skill-row">
+          <img class = "skill-image c-image" src="images/c-sharp.png" alt="c# image" data-aos="flip-up">
+          <h3 >Systems Design and Development</h3>
+          <p class = "systems-details" data-aos = "fade-right">My Information Systems background has given me Systems Developement expeience i the differnt phases in the software Development
+              life-cycle. During this time i gained experiecnce in C# and Microsoft Visual Studio  </p>
+        </div>          
+      <div class="skill-row" >
+          <img class = "skill-image web-image" src="images/web-development.png" alt="web image" data-aos="flip-up">
+          <h3 >Web Developement</h3>
+          <p class = "web-details"data-aos = "fade-right">During my free time, I enjoy learning and improving my Web-Development skills
+              I experience in HTML, CSS, Bootstrap4, JavaScript, DOM, jQuery, Node.js, React </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  
+  <section id = "project-section" class = "center-padding scroll-section">
+  
+    <h2 style = "margin-bottom: 40px;">My Projects</h2>
+  
+    <div id="projects-carousel" class="carousel slide" data-bs-ride="false">
+  
+      <div class="carousel-inner" data-aos = "fade-in">
+  
+        <div class="carousel-item active">
+          <h3>Image Mean and Meadian Filter</h3>
+          <img class = "project-image" src="images/Filter.jpg" data-aos = "flip-up" alt="MeanFilterImage">
+          <p data-aos = "fade-up">>Lorem ipsum dolor sit amet, in quis, aenean amet. Phasellus sodales, tellus donec dui, ornare erat</p>
+        </div>
+        <div class="carousel-item ">
+          <h3> MultiThreaded Java Typing Game</h3>
+          <img class = "project-image" src="images/TypingTutor2.jpg" data-aos = "flip-up" alt="TypingTutorApp">
+          <p data-aos = "fade-up">>Lorem ipsum dolor sit amet, in quis, aenean amet. Phasellus sodales, tellus donec dui, ornare erat</p>
+        </div>   
+        <div class="carousel-item">
+          <h3>TinDog Clone Website</h3>
+          <img class = "project-image" src="images/Tindog.jpg" data-aos = "flip-up" alt="AlphabetApp">
+          <p data-aos = "fade-up">>Lorem ipsum dolor sit amet, in quis, aenean amet. Phasellus sodales, tellus donec dui, ornare erat</p>
+        </div> 
+      <div class="carousel-item">
+        <h3>Android Alphabet App</h3>
+        <img class = "project-image" src="images/AlphabetApp.jpg" data-aos = "flip-up" alt="AlphabetApp">
+        <p data-aos = "fade-up">>Lorem ipsum dolor sit amet, in quis, aenean amet. Phasellus sodales, tellus donec dui, ornare erat</p>
+      </div>
+      <div class = "carousel-item">
+        <h3> Basic Calculator</h3>
+        <img class = "project-image" src="images/Calculator.jpg" data-aos = "flip-up" alt="Calculator">
+        <p data-aos = "fade-up">Lorem ipsum dolar sit amet, in quis aenean amet, Phasellius dodales, tellus donec dui, ornac erat</p>
+      </div>
+
+      
+      
+    </div>
+  
+  
+      <button class="carousel-control-prev" type="button" data-bs-target="#projects-carousel" data-bs-slide="prev" data-aos = "fade-right" data-aos-duration = "1000">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#projects-carousel" data-bs-slide="next" data-aos = "fade-left" data-aos-duration = "1000">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  
+  </section>
+  
+  <section id = "education-section" class = "center-padding scroll-section">
+  
+    <h2>Education</h2>
+  
+    <div class = "row center-inners" data-aos = "fade-left">
+      <div class = "col-lg-3"> 2020</div>
+      <div class="education-item col">
+        <h3>Bosmansdam High School</h3>
+        <p>Obtained my NSC with a 78% aggregate .Subjects include: Mathematics, English HL, Afrikaans FAL, Physical Science, Life-Sciecne and Computer Application Technology</p>
+      </div>
+    </div>
+  
+    <div class = "row center-inners" data-aos = "fade-in">
+      <div class = "col-lg-3"> 2021-Present</div>
+      <div class = "education-item col">
+        <h3>University of Cape Town </h3>
+        <p>Currently obtaining my degree i Bcom Computer Science and Information Systems</p>
+      </div>
+    </div>
+  
+    <!-- <div class = "row center-inners" data-aos = "fade-right">
+      <div class = "col-lg-3"> 2021-Present</div>
+      <div class = "education-item col">
+        <h3>Dr Angela Yu Full-Stack Web Development Course</h3>
+        <p>I completed this course during my summer vacation in 2022</p>
+      </div>
+    </div> -->
+  
+  </section>
+  
+    
+  
+  
+  
+  <section id = "contact-section" class = "center-padding scroll-section" >
+    <h2>Contact me section coming soon</h2>
+    <!-- <div id = "contact center-inners">
+      <div class="contact-me" data-aos = "zoom-in">
+        <h2>Get In Touch</h2>
+        <h3>Lorem ipsum dolor sit amet, non elit.</h3>
+        <p>Lorem ipsum dolor sit amet, in quis, aenean amet. Phasellus sodales, tellus donec dui, ornare erat.</p>
+        <a class="btn" href="yachyaat@gmail.com">CONTACT ME</a>
+      </div>
+    </div> -->
+  </section>
+  
+      
+  <section class = "footer-section bg-dark scroll-section">
+    <div class="bottom-container center-inners">
+      <a class="footer-link" href="https://www.linkedin.com/">LinkedIn</a>
+      <a class="footer-link" href="https://twitter.com/">Twitter</a>
+      <a class="footer-link" href="https://www.appbrewery.co/">Website</a>
+      <p class = "copyright-text">© Yachyaa Toefy.</p>
+    </div>
+  </section>  
+  
+</div>
+
+
+
+    
+
+  <!-- <img class = "background-bottom" src="images/colors.png" alt="colors image">
+  <img class = "background-top" src="images/colors.png" alt="colors image"> -->
+
+</body>
+</html>
